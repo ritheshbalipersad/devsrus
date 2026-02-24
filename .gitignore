@@ -13,8 +13,7 @@
 # testing
 /coverage
 
-# next.js
-/.next/
+# next.js (/.next/ committed for deployment)
 /out/
 
 # production

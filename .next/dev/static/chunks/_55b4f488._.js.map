@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Source/Repos/devsrus/src/app/admin/AdminLogout.tsx"],"sourcesContent":["\"use client\";\n\nimport { useRouter } from \"next/navigation\";\n\nexport default function AdminLogout() {\n  const router = useRouter();\n\n  async function handleLogout() {\n    await fetch(\"/api/auth/logout\", { method: \"POST\" });\n    router.push(\"/admin/login\");\n    router.refresh();\n  }\n\n  return (\n    <button\n      type=\"button\"\n      onClick={handleLogout}\n      className=\"ml-auto rounded-lg px-4 py-2 text-sm text-slate-400 transition hover:bg-slate-700 hover:text-white\"\n    >\n      Log out\n    </button>\n  );\n}\n"],"names":[],"mappings":";;;;;AAEA;;;AAFA;;AAIe,SAAS;;IACtB,MAAM,SAAS,IAAA,kJAAS;IAExB,eAAe;QACb,MAAM,MAAM,oBAAoB;YAAE,QAAQ;QAAO;QACjD,OAAO,IAAI,CAAC;QACZ,OAAO,OAAO;IAChB;IAEA,qBACE,6LAAC;QACC,MAAK;QACL,SAAS;QACT,WAAU;kBACX;;;;;;AAIL;GAlBwB;;QACP,kJAAS;;;KADF"}},
+    {"offset": {"line": 49, "column": 0}, "map": {"version":3,"sources":["file:///C:/Source/Repos/devsrus/node_modules/next/navigation.js"],"sourcesContent":["module.exports = require('./dist/client/components/navigation')\n"],"names":[],"mappings":"AAAA,OAAO,OAAO","ignoreList":[0]}}]
+}

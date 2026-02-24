@@ -1,0 +1,49 @@
+{
+  "version": 3,
+  "middleware": {
+    "/": {
+      "files": [
+        "server/edge/chunks/node_modules_next_dist_4a502595._.js",
+        "server/edge/chunks/[root-of-the-server]__dd62f150._.js",
+        "server/edge/chunks/turbopack-node_modules_next_dist_esm_build_templates_edge-wrapper_438389e4.js"
+      ],
+      "name": "middleware",
+      "page": "/",
+      "matchers": [
+        {
+          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/admin(\\\\.json)?[\\/#\\?]?$",
+          "originalSource": "/admin"
+        },
+        {
+          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/admin(?:\\/((?!login).*))(\\\\.json)?[\\/#\\?]?$",
+          "originalSource": "/admin/((?!login).*)"
+        },
+        {
+          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/api\\/admin(?:\\/((?:[^\\/#\\?]+?)(?:\\/(?:[^\\/#\\?]+?))*))?(\\\\.json)?[\\/#\\?]?$",
+          "originalSource": "/api/admin/:path*"
+        },
+        {
+          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/admin\\/login(\\\\.json)?[\\/#\\?]?$",
+          "originalSource": "/admin/login"
+        },
+        {
+          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/api\\/auth\\/login(\\\\.json)?[\\/#\\?]?$",
+          "originalSource": "/api/auth/login"
+        }
+      ],
+      "wasm": [],
+      "assets": [],
+      "env": {
+        "__NEXT_BUILD_ID": "development",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "uovSHyq+sb9ZAAifff0TwfR7FEZXAB+lLHZAFcMTjPU=",
+        "__NEXT_PREVIEW_MODE_ID": "099353b58034ceda5188600f0ed7d8b9",
+        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "380f1944ec72e14074798797410876e80b2db8970781a1987deec1c04f3d564d",
+        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "b0d3bf9911421ec1e2ff7460e053553fc70864e829aa4c76b769e4c51dcfffef"
+      }
+    }
+  },
+  "sortedMiddleware": [
+    "/"
+  ],
+  "functions": {}
+}
