@@ -5,7 +5,9 @@
 # After deployment, restart your Node.js app in cPanel (Setup Node.js App → Restart)
 # if it doesn’t auto-restart.
 
+# Limit Node heap to stay under cPanel/LVE memory limits (e.g. 4GB).
+# Use Webpack instead of Turbopack (see package.json build script) to avoid Wasm OOM.
 deployment:
   tasks:
     - npm install --production=false
-    - npm run build
+    - NODE_OPTIONS="--max-old-space-size=3072" npm run build
