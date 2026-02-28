@@ -1,6 +1,4 @@
 ---
-# cPanel Git deployment (runs from repo directory after pull).
-# Pre-built app: only install deps. Restart Node.js app in cPanel after deploy if needed.
 deployment:
   tasks:
     - npm install --production

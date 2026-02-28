@@ -1,0 +1,2 @@
+# Normalize line endings to LF so cPanel (Linux) has a clean working tree after pull
+* text=auto eol=lf
