@@ -100,7 +100,7 @@ self.__SERVER_FILES_MANIFEST={
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "C:\\Source\\Repos\\devsrus",
+    "outputFileTracingRoot": "C:\\Code\\devsrus",
     "cacheComponents": false,
     "cacheLife": {
       "default": {
@@ -157,7 +157,7 @@ self.__SERVER_FILES_MANIFEST={
       "proxyPrefetch": "flexible",
       "optimisticClientCache": true,
       "manualClientBasePath": false,
-      "cpus": 13,
+      "cpus": 11,
       "memoryBasedWorkersCount": false,
       "imgOptConcurrency": null,
       "imgOptTimeoutInSeconds": 7,
@@ -293,11 +293,11 @@ self.__SERVER_FILES_MANIFEST={
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.mjs",
     "turbopack": {
-      "root": "C:\\Source\\Repos\\devsrus"
+      "root": "C:\\Code\\devsrus"
     },
     "distDirRoot": ".next"
   },
-  "appDir": "C:\\Source\\Repos\\devsrus",
+  "appDir": "C:\\Code\\devsrus",
   "relativeAppDir": "",
   "files": [
     ".next\\routes-manifest.json",

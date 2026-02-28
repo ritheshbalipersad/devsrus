@@ -13,7 +13,8 @@
 # testing
 /coverage
 
-# next.js (/.next/ committed for deployment)
+# next.js (/.next/ committed for deployment; cache excluded)
+/.next/cache
 /out/
 
 # production
