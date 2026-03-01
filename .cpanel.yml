@@ -1,5 +1,5 @@
 ---
-# npm path: cPanel often uses nodevenv/AppName/AppName/18/bin (or system ea-nodejs18).
+# Next.js 16 requires Node >= 20.9. Try nodevenv/AppName/AppName/20 first, then 18.
 deployment:
   tasks:
-    - export PATH="$HOME/nodevenv/devsrus.co.za/devsrus.co.za/18/bin:/opt/cpanel/ea-nodejs18/bin:$PATH" && npm install --production
+    - export PATH="$HOME/nodevenv/devsrus.co.za/devsrus.co.za/20/bin:$HOME/nodevenv/devsrus.co.za/devsrus.co.za/18/bin:/opt/cpanel/ea-nodejs20/bin:/opt/cpanel/ea-nodejs18/bin:$PATH" && npm install --production
