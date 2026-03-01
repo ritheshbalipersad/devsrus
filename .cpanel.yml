@@ -1,5 +1,5 @@
 ---
-# Use your Node.js app's npm (app: devsrus.co.za, root: repositories/devsrus, node 18).
+# npm path: cPanel often uses nodevenv/AppName/AppName/18/bin (or system ea-nodejs18).
 deployment:
   tasks:
-    - export PATH="$HOME/nodevenv/devsrus.co.za/18/bin:$PATH" && npm install --production
+    - export PATH="$HOME/nodevenv/devsrus.co.za/devsrus.co.za/18/bin:/opt/cpanel/ea-nodejs18/bin:$PATH" && npm install --production
