@@ -1,4 +1,6 @@
 ---
+# Ensure npm is in PATH (cPanel task runner has minimal env).
+# Tries: Setup Node.js App nodevenv, then system ea-nodejs.
 deployment:
   tasks:
-    - npm install --production
+    - export PATH="$HOME/nodevenv/devsrus/20/bin:$HOME/nodevenv/website/20/bin:/opt/cpanel/ea-nodejs20/bin:/opt/cpanel/ea-nodejs18/bin:/opt/cpanel/ea-nodejs22/bin:$PATH" && npm install --production
